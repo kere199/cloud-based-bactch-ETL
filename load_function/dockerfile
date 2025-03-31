@@ -3,6 +3,5 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 COPY main.py .
-COPY credentials.json .  # Include credentials for local testing (exclude from Git)
 ENV PORT=8080
 CMD ["functions-framework", "--target", "load_to_bigquery", "--source", "main.py", "--port", "8080"]
