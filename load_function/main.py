@@ -43,8 +43,8 @@ def load_to_bigquery(cloud_event):
     df = pd.DataFrame(cleaned_data)
 
     # BigQuery configuration
-    project_id = "your-project-id"  # Replace with your project ID
-    dataset_id = "your_dataset"    # Replace with your dataset ID
+    project_id = "vital-cathode-454012-k0"  # Replace with your project ID
+    dataset_id = "ETL_pipeline_kere"    # Replace with your dataset ID
     table_id = "coursera_courses"
 
     bq_client = bigquery.Client(project=project_id)
