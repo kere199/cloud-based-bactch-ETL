@@ -1,4 +1,4 @@
-import functions_framework # type: ignore
+import functions_framework
 from google.cloud import storage
 from google.cloud import bigquery
 import json
